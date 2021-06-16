@@ -1,0 +1,91 @@
+.table1{
+    background-color: white;
+    padding: 10px;
+    margin:15px auto;
+    width: 100px;
+    height: 50px;
+    
+    }
+
+.table1 .ligne1 article:nth-of-type(1){
+        /* margin: auto;*/
+         padding: 5px;
+         background-color: white;
+         vertical-align:top;    
+         float: center;
+         width: 100px;
+         height:20px;
+     }
+
+.table1 .ligne1 button{
+        background-color: #e7e7e7;
+        font-size: 17px;
+        width: 100px ;
+        color:black;
+        margin-bottom: auto;
+    }
+    
+  
+
+
+.table2 {
+background-color: white;
+padding: 10px;
+margin:10px auto;
+width: 200px;
+height: 200px;
+float: center;
+
+}
+
+
+
+.table2 .ligne article:nth-of-type(1){
+   /* margin: auto;*/
+    padding: 10px;
+    background-color: white;
+    vertical-align:top;  
+    height:10rem;  
+    float: center;
+    width: 20px white;
+    
+}
+
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid  black;
+    width: 60%;
+    padding: 3px;
+    margin-left: 32px;
+    
+}
+
+.buty button{
+    
+    background-color: gray;
+    font-size: 17px;
+    width: 45px ;
+    margin: 2px;
+    background-color: white;
+    color:gray;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buty button:hover {opacity: 2}
+
+article 
+{
+    display:table-cell; 
+}
+
+th, td {
+
+    padding:0.1rem; 
+    border:0.1rem orangered; 
+
+}

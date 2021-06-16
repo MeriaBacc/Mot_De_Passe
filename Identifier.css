@@ -1,0 +1,86 @@
+
+.des_inp {
+    border-radius: 5px ;
+    border: 1px solid  #ccc;
+    background-color: white;
+    padding: 20px;
+    margin : 15px auto ;
+    width: 450px;
+  }
+
+
+label{
+    color :grey ;
+    padding : 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey ;
+    border-radius: 4px ;
+    box-shadow: 5px ;
+  }
+
+  input[type=password]{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey ;
+    border-radius: 4px ;
+    box-shadow: 5px ;
+
+  }
+
+.dest_text button{
+    padding: 10px 40px;
+    border-radius: 4px;
+    background-color: rgb(255,165,0);
+    border : 1px rgb(255,165,0);
+    margin-left: 320px;
+    text-decoration: none;
+}
+
+
+
+.dest_button{
+    padding :2px;
+    border-bottom : 1px solid rgb(221, 220, 220);
+    margin-top:10px; 
+   
+}
+
+.dest_text{
+    margin-top:9px; 
+}
+
+.buty{
+    margin-top:20px;
+    margin-left: 120px;
+}
+
+
+
+.buty button{
+    
+    padding: 9px 25px;
+    border-radius: 3px ;
+    background-color: white;
+    border: 1px solid black;
+    color : black;
+   
+    transition-duration: 0.4s;
+}
+.buty button:hover {
+    background-color:rgb(255,165,0); /* Green */
+    color: bisque;
+    border:rgb(255,165,0);
+  }

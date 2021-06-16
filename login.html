@@ -1,0 +1,130 @@
+<html>
+    <head>
+
+        <title></title>
+        <link rel="stylesheet" href="Identifier.css">
+        <script type="text/javascript" src="fich1.js"></script>
+        <style>
+            #myTable{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div  class="des_inp">
+                    <div class="dest_text">
+                        <label>Email</label>
+                        <input type="text"  class="form-control"  >
+                    </div>
+                    <div class="dest_text">
+                        <label>Password</label>
+                        <input type="password"  id="output" class="form-control" maxlength="6"  onclick ="afficher()">
+                    </div>
+                    <div class="buty">				
+                            <table class="inverse" id="myTable">
+                            <tbody>
+                            <thead>
+                                <tr>
+                                <th><button onclick="affiche('0')">0</button></th>
+                                <th><button onclick="affiche('1')">1</button></th>
+                                <th><button onclick="affiche('2')">2</button></th>
+                                </tr>
+                            </thead>
+                            
+                            <tr>
+                                <th><button onclick="affiche('3')">3</button></th>
+                                <th><button onclick="affiche('4')">4</button></th>
+                                <th><button onclick="affiche('5')">5</button></th>
+                            </tr>
+                            <tr>
+                                <th><button onclick="affiche('6')">6</button></th>
+                                <th><button onclick="affiche('7')">7</button></th>
+                                <th><button onclick="affiche('8')">8</button></th>
+                            </tr> 
+                            <tr>
+                            <th><button onclick="affiche(' ')" transparent>&nbsp;</button></th>
+                            <th><button onclick="affiche('9')">9</button></th>
+                            <th><button onclick="affiche(' ')" transparent>&nbsp;</button></th>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        <p id="Confirm_Pass"></p>
+                        <div class="dest_button" ></div>
+
+                     
+                
+                <div class="dest_text">
+                    <button  type="submit" id="btn" onclick="test()">Register</button>
+                </div>
+                    <a href="file:///C:/Users/ExpressMedia/Desktop/projet%20sabrine/Identifier_Password.html">Login</a>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="http://danielhagnoul.developpez.com/lib/raphael-min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://danielhagnoul.developpez.com/lib/jPicker/jpicker-1.1.6.min.js"></script>
+    <script src="http://danielhagnoul.developpez.com/lib/dvjh/base.js"></script>
+    
+    
+    
+    
+    
+    <script>
+        "use strict";
+
+        $( function(){
+
+            $( "#btn" ).click( function(){
+
+                $("table.inverse").each( function( i, item ){
+                    var newrows = [];
+
+                    $( item )
+                        .find("tr")
+                            .each( function( j, jtem ){
+                                var z = -1;
+
+                                $( jtem )
+                                    .find("th, td").each(function( k, ktem ){
+                                        z++;
+
+                                        if ( newrows[z] === undefined ){
+                                            newrows[z] = $("<tr></tr>");
+                                        }
+
+                                        newrows[z].append( ktem );
+                                    });
+                            })
+                            .remove();
+
+                    $.each( newrows, function( m, mtem){
+                        if ( m == 0 ){
+                            $( "thead", item ).append( mtem );
+                        } else {
+                            $( item ).append( mtem );
+                        }
+                    });
+                });
+
+            });
+        });
+
+        $( window ).load( function(){
+
+        });
+    </script>
+
+    </body>
+</html>
